@@ -1,0 +1,13 @@
+{
+  "revision": 1,
+  "generatedAt": "2026-08-17",
+  "note": "샘플(더미) 재료입니다. 실제 재료/레시피는 비공개 sync 레포 연결(우하단 동기화 바) 후 표시됩니다.",
+  "items": [
+    { "id": "milk", "name": "우유", "role": "dairy", "color": "#f4f1e8", "pattern": "liquid", "icon": "drop", "defaultUnit": "line" },
+    { "id": "foam", "name": "폼", "role": "foam", "color": "#fbfaf5", "pattern": "foam", "icon": "cloud", "defaultUnit": "line" },
+    { "id": "ice", "name": "얼음", "role": "ice", "color": "#cfe8f2", "pattern": "chunk", "icon": "snow", "defaultUnit": "line" },
+    { "id": "coffee-base", "name": "커피베이스", "role": "base", "color": "#6f4e37", "pattern": "liquid", "icon": "bottle", "defaultUnit": "line" },
+    { "id": "cream-base", "name": "크림베이스", "role": "base", "color": "#efe6d3", "pattern": "liquid", "icon": "bottle", "defaultUnit": "line" },
+    { "id": "whip", "name": "휘핑", "role": "topping", "color": "#fffdf8", "pattern": "foam", "icon": "cloud", "defaultUnit": "count" }
+  ]
+}

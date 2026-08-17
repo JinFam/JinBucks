@@ -1,0 +1,32 @@
+{
+  "revision": 1,
+  "generatedAt": "2026-08-17",
+  "note": "샘플(더미) 레시피입니다. 실제 매장 레시피는 비공개 sync 레포 연결 후 표시됩니다. (이 파일에는 실제 레시피가 없습니다.)",
+  "items": [
+    {
+      "id": "sample-milk",
+      "name": "샘플 · 스팀 우유",
+      "family": "sample",
+      "sizeConstraint": null,
+      "straw": null,
+      "steps": [
+        { "ingredientId": "milk", "phase": "pre-blend", "fill": "top", "qty": null },
+        { "ingredientId": "foam", "phase": "finish", "fill": null, "qty": null }
+      ]
+    },
+    {
+      "id": "sample-frappuccino",
+      "name": "샘플 · 프라푸치노(더미)",
+      "family": "sample",
+      "sizeConstraint": null,
+      "straw": null,
+      "steps": [
+        { "ingredientId": "milk", "phase": "pre-blend", "fill": "bottom", "qty": null },
+        { "ingredientId": "ice", "phase": "pre-blend", "fill": null, "qty": null },
+        { "ingredientId": "coffee-base", "phase": "pre-blend", "fill": null, "qty": null },
+        { "type": "marker", "phase": "blend", "note": "블렌더 1번" },
+        { "ingredientId": "whip", "phase": "finish", "fill": null, "qty": null }
+      ]
+    }
+  ]
+}

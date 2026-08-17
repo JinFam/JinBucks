@@ -1,0 +1,11 @@
+{
+  "name": "jinbucks-recipe-trainer",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "스타벅스 바리스타 레시피 학습 웹앱 (빌드리스 정적, GitHub Pages). package.json은 node 테스트 실행 및 ESM 표시용이며 배포 빌드에는 사용되지 않는다.",
+  "scripts": {
+    "test": "node js/features/recipe-trainer/grade.test.node.mjs",
+    "serve": "python -m http.server 8080"
+  }
+}

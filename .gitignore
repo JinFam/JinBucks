@@ -1,0 +1,15 @@
+# OMC 내부 계획/상태 아티팩트 (레포에 불필요)
+.omc/
+
+# node
+node_modules/
+npm-debug.log*
+
+# sync 레포 스테이징(실데이터 — 앱 레포에 커밋 금지)
+.sync-staging/
+
+# OS/에디터
+.DS_Store
+Thumbs.db
+*.swp
+_*.mjs

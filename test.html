@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JinBucks — grade.js 테스트</title>
+  <style>
+    body { font-family: ui-monospace, Menlo, Consolas, monospace; margin: 24px; background: #101418; color: #e6edf3; }
+    h1 { font-size: 18px; }
+    .summary { font-size: 16px; font-weight: 700; margin: 12px 0; }
+    .summary.ok { color: #3fb950; } .summary.bad { color: #f85149; }
+    .t { padding: 6px 10px; border-radius: 6px; margin: 4px 0; }
+    .t.pass { background: rgba(63,185,80,.12); }
+    .t.fail { background: rgba(248,81,73,.15); }
+    .name::before { content: 'PASS '; color: #3fb950; }
+    .t.fail .name::before { content: 'FAIL '; color: #f85149; }
+    .detail { color: #8b949e; font-size: 12px; margin-left: 40px; white-space: pre-wrap; }
+  </style>
+</head>
+<body>
+  <h1>grade.js known-answer 테스트</h1>
+  <div id="out"></div>
+  <script type="module">
+    import { runTests } from './js/features/recipe-trainer/grade.test.js';
+    const r = runTests();
+    const out = document.getElementById('out');
+    const sum = document.createElement('div');
+    sum.className = 'summary ' + (r.allPass ? 'ok' : 'bad');
+    sum.textContent = `${r.passed}/${r.total} passed`;
+    out.appendChild(sum);
+    for (const t of r.tests) {
+      const d = document.createElement('div');
+      d.className = 't ' + (t.pass ? 'pass' : 'fail');
+      d.innerHTML = `<div class="name">${t.name}</div>` + (t.pass ? '' : `<div class="detail">${t.detail}</div>`);
+      out.appendChild(d);
+    }
+  </script>
+</body>
+</html>
